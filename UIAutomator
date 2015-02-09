@@ -1,0 +1,31 @@
+UIAutomator is a tool to perform UI automation Testing for Android devices.
+Here we will use UIAutomator ported for Python.
+
+Prerequisites
+1. Python 2.7/ Python 3.4
+2. Internet connection
+3. Python bin is present in OS path.
+4. Android SDK installed and proper path is set.
+5. Device drivers installed properly for Device under Test.(adb devices should show the device you want to automate)
+
+Note: 4.1 OS devices will have some functions not working. like d.screenshot('location') will only work for 4.2 and above.
+
+Steps:
+1. Open cmd prompt and type 
+pip install urllib3
+
+2. After it gets installed type
+pip install uiautomator
+
+And we are ready for testing Android Apps through python and uiautomator
+
+Open command prompt and check the device is detected or not - 
+adb devices (copy the device id)
+
+now open python in interactive mode by typing Python in cmd prompt.
+
+>>> from uiautomator import Device
+>>> d = Device('DEVICE_ID')
+>>> d.press.home()  # observe home key is pressed in device.
+
+Now we can start writing test scripts for automation in Android device.
