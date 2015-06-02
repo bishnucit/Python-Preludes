@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 
 driver = webdriver.Firefox()
 driver.get("https://marketplace-dev.allizom.org/")
-driver.implicitly_wait(12)
+driver.implicitly_wait(5)
 #assert "Develop Apps" in driver.page_source
 driver.find_element_by_xpath("//*[@id='footer']/ul/li[3]/a").click()
 driver.implicitly_wait(5)
