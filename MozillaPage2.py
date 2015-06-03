@@ -4,7 +4,7 @@ from selenium.webdriver.common.keys import Keys
 
 driver = webdriver.Firefox()
 driver.get("https://marketplace-dev.allizom.org/")
-driver.implicitly_wait(12)
+driver.implicitly_wait(5)
 driver.find_element_by_xpath("//*[@id='site-header']/mkt-header-nav/li[2]/a").click()
 assert "Popular | Firefox Marketplace" in driver.title
 
